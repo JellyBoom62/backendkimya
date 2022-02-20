@@ -21,8 +21,8 @@ import { Answer } from './answers/answers.entity';
 			host: 'localhost',
 			port: 3306,
 			username: 'root',
-			password: 'root',
-			database: 'almazkimya',
+			password: 'ff6981cf69b9ffb7',
+			database: 'almazdata',
 			entities: [User, Test, Answer],
 			synchronize: true,
 		})

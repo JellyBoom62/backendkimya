@@ -88,7 +88,7 @@ export class AuthService {
 			secret: `${process.env.REFRESH_SECRET_KEY}`,
 			expiresIn: "2592000s"
 		});
-		const cookie = `Refresh=${token}; HttpOnly; Path=/; SameSite=None; Max-Age=2592000s`;
+		const cookie = `Refresh=${token}; HttpOnly; Path=/; SameSite=None; secure; Max-Age=2592000s`;
 		return {
 			cookie,
 			token
@@ -101,7 +101,7 @@ export class AuthService {
 			secret: `${process.env.SECRET_KEY}`,
 			expiresIn: `172800s`
 		});
-		const cookie = `Authentication=${token}; HttpOnly; Path=/; SameSite=None; Max-Age=172800s`
+		const cookie = `Authentication=${token}; HttpOnly; Path=/; SameSite=None; secure; Max-Age=172800s`
 		return {
 			cookie,
 			token
